@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Publikus from './components/Publikus';
+import Urlap from './components/Urlap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+    <header>
+      <h1>Kizöldítjük a Földet!</h1>
+    </header>
+    <article>
+      <div id='urlap'>
+      <Urlap/>
+
+      </div>
+      <div id='publikus'>
+      {<Publikus/>}
+      </div>
+    </article>
     </div>
   );
 }
